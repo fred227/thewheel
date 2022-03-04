@@ -6,6 +6,8 @@ import { useAnchorWallet } from '@solana/wallet-adapter-react';
 import * as borsh from "@project-serum/borsh";
 import { exit } from 'process';
 
+import idl from './data/the_wheel_official3.json';
+
 export const MAX_SESSIONS = 9;
 export const MAX_WINNERS = 5;
 export const MIN_DEPOSIT = 10000000;
@@ -74,7 +76,8 @@ export const MyContext: FC = ({ children }) => {
     const connection = new Connection("https://api.devnet.solana.com", "confirmed");
     const AnchorWallet = useAnchorWallet();
     const opts : ConfirmOptions = {  preflightCommitment: 'confirmed', }
-    const idl = require('./data/the_wheel_official3.json');
+    //const idl = require('./data/the_wheel_official3.json');
+
     const provider = new Provider( connection, AnchorWallet!, opts );
     const program = new Program(idl, PUBLICKEY_PROGRAM, provider);
 
