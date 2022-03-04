@@ -8,6 +8,7 @@ import { Program, Provider, BN } from '@project-serum/anchor';
 import { Connection,PublicKey,ConfirmOptions} from '@solana/web3.js';
 import { useWallet } from '@solana/wallet-adapter-react'
 import {PDATHEWHEEL_DATA_LAYOUT, PUBLICKEY_PROGRAM} from '../MyContext'
+import idl from '../data/the_wheel_official3.json';
 
 export const MyTest: FC = () => {
 
@@ -17,7 +18,7 @@ export const MyTest: FC = () => {
 const connection = new Connection("https://api.devnet.solana.com", "confirmed");
 const AnchorWallet = useAnchorWallet();
 const opts : ConfirmOptions = {  preflightCommitment: 'confirmed', }
-const idl = require('../data/the_wheel_official3.json');
+//const idl = require('../data/the_wheel_official3.json');
 const provider = new Provider( connection, AnchorWallet!, opts );
 const program = new anchor.Program(idl, PUBLICKEY_PROGRAM,provider);
 
