@@ -1,12 +1,13 @@
 {
-    "name":"thewheel",
+    "name":"thewheel-solana",
     "email" : "flesage111@gmail.com",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "author": "flesage",
     "license": "Apache-2.0",
     "engines": {
-        "node": "16.x"
-        },
+        "node": "16.x",
+        "yarn": "1.x"
+      },
     "publishConfig": {
         "access": "public"
     },
