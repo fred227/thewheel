@@ -1,8 +1,8 @@
 # thewheel
 
 
-use 'yarn' to install
+'yarn' to install
 
 then
 
-yarn start to execute
+'yarn start' to execute
