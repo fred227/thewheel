@@ -7,7 +7,8 @@
     "license": "Apache-2.0",
     "engines": {
         "node": "16.x",
-        "yarn": "1.x"
+        "yarn": "1.x",
+        "npm": "8.x"
     },
     "publishConfig": {
         "access": "public"
@@ -55,7 +56,8 @@
         "react-minimal-pie-chart": "^8.2.0",
         "react-router-dom": "^6.2.1",
         "yarn": "^1.22.17",
-        "shx": "^0.3.4"
+        "shx": "^0.3.4",
+        "parcel": "^2.3.2"
     },
     "devDependencies": {
         "@types/eslint": "^8.2.2",
