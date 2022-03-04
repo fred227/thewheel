@@ -1,0 +1,257 @@
+{
+  "version": "0.1.0",
+  "name": "the_wheel_official3",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "creator",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "thewheelaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "thewheelaccountBump",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "initgame",
+      "accounts": [
+        {
+          "name": "creatorgame",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "gameaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "thewheelaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "session",
+          "type": "u8"
+        },
+        {
+          "name": "launchingdate",
+          "type": "i64"
+        },
+        {
+          "name": "maxplayers",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "initplayer",
+      "accounts": [
+        {
+          "name": "player",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "thewheelaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "playeraccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "gameaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "session",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "confirmdeposit",
+      "accounts": [
+        {
+          "name": "player",
+          "isMut": false,
+          "isSigner": true
+        },
+        {
+          "name": "thewheelaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "gameaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "playeraccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "session",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "play",
+      "accounts": [
+        {
+          "name": "thewheelaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "gameaccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "session",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "getpaid",
+      "accounts": [
+        {
+          "name": "player",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "thewheelaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "gameaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "session",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "reopengame",
+      "accounts": [
+        {
+          "name": "thewheelaccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "gameaccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "session",
+          "type": "u8"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "TheWheelError",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "InvalidTheWheelAccount"
+          },
+          {
+            "name": "InvalidGameAccount"
+          },
+          {
+            "name": "InvalidPlayerAccount"
+          },
+          {
+            "name": "InvalidInput"
+          },
+          {
+            "name": "SessionNotValid"
+          },
+          {
+            "name": "SessionNotAvailable"
+          },
+          {
+            "name": "PlayerInPendingList"
+          },
+          {
+            "name": "ErrorOnPendingList"
+          },
+          {
+            "name": "InsufficientDeposit"
+          },
+          {
+            "name": "MaxPlayerLimitReach"
+          },
+          {
+            "name": "GameStillValid"
+          },
+          {
+            "name": "LaunchingDateTooHigh"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+#thewheel>div#winners { 
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(53, 53, 58);
+    height: auto;
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#winners>table{
+    width:  1000px;
+
+    margin: auto;
+
+}
+
+div#winners>table>tbody>tr>td{
+    text-align: center; 
+    vertical-align: middle;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}

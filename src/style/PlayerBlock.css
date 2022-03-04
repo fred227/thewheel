@@ -1,0 +1,17 @@
+
+#playerBlock>#send{
+  margin: 15px 5px 15px 5px ;
+  display: flex;
+  gap: 120px;
+}
+
+a#red{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 0, 0);
+}
+a#green{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(0, 255, 0);
+}

@@ -1,0 +1,110 @@
+@import './reset.css';
+
+html, body {
+  background: linear-gradient(to right, #00FFA3, #DC1FFF);
+    color: #FFFFFF;
+}
+
+#thewheel{
+  display: flex;
+  flex-flow: column ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  
+}
+
+h1{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+}
+a{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+#thewheel>#main { 
+  position: relative ;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: column ;
+  width: 1100px;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+  padding-bottom: 30px;
+  
+  background: rgb(58, 53, 53);
+}
+
+
+
+#thewheel>#sessions { 
+  margin-top: 30px;
+  border-radius: 30px;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(58, 53, 53);
+  height: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+article{
+  position: relative ;
+
+  margin-top: 20px;
+  border-radius: 30px;
+
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding : 5px 30px 0px 30px;
+
+  background: #6b4f65;
+}
+
+
+#wallet{
+  position: absolute ;
+  left:50px;
+  top: 45px;
+}
+
+#intro{
+  position: absolute ;
+  width: fit-content;
+  margin-top: 40px;
+  right: 50px;
+  text-align: end;
+}
+
+#infogame{
+  margin-top: 120px;
+}
+
+
+#initgame>#init{
+  position: absolute ;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  right: 20px;
+  justify-content: center;
+}
+
