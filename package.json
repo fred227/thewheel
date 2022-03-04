@@ -6,8 +6,8 @@
     "browserslist": "> 0.5%, last 2 versions, not dead",
     "license": "Apache-2.0",
     "engines": {
-        "node": "16.14.0",
-        "yarn": "1.22.17"
+        "node": "16.x",
+        "yarn": "1.x"
     },
     "publishConfig": {
         "access": "public"
