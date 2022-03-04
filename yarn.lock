@@ -3787,7 +3787,7 @@
   "resolved" "https://registry.npmjs.org/pako/-/pako-2.0.4.tgz"
   "version" "2.0.4"
 
-"parcel@^2.2.0":
+"parcel@^2.3.2":
   "integrity" "sha512-4jhgoBcQaiGKmnmBvNyKyOvZrxCgzgUzdEoVup/fRCOP99hNmvYIN5IErIIJxsU9ObcG/RGCFF8wa4kVRsWfIg=="
   "resolved" "https://registry.npmjs.org/parcel/-/parcel-2.3.2.tgz"
   "version" "2.3.2"

@@ -1,13 +1,14 @@
 {
-    "name":"thewheel-solana",
-    "email" : "flesage111@gmail.com",
+    "name": "thewheel-solana",
+    "email": "flesage111@gmail.com",
     "version": "1.0.0",
     "author": "flesage",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
     "license": "Apache-2.0",
     "engines": {
         "node": "16.x",
         "yarn": "1.x"
-      },
+    },
     "publishConfig": {
         "access": "public"
     },
@@ -30,7 +31,8 @@
         "fmt": "prettier --write '{*,**/*}.{js,ts,jsx,tsx,json}'",
         "lint": "eslint . && prettier --check '{*,**/*}.{js,ts,jsx,tsx,json}'",
         "lint:fix": "eslint --fix . && yarn fmt",
-        "nuke": "shx rm -rf node_modules yarn.lock"
+        "nuke": "shx rm -rf node_modules yarn.lock",
+        "heroku-postbuild": "parcel build src/index.html"
     },
     "dependencies": {
         "@emotion/react": "^11.0.0",
@@ -66,7 +68,7 @@
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-react": "^7.28.0",
         "eslint-plugin-react-hooks": "^4.3.0",
-        "parcel": "^2.2.0",
+        "parcel": "^2.3.2",
         "prettier": "^2.5.1",
         "shx": "^0.3.4",
         "tslib": "^2.3.1",
