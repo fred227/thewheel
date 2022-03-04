@@ -1,7 +1,12 @@
 {
-    "version": "0.13.2",
+    "name":"thewheel",
+    "email" : "flesage111@gmail.com",
+    "version": "0.1.0",
     "author": "flesage",
     "license": "Apache-2.0",
+    "engines": {
+        "node": "16.14.0"
+        },
     "publishConfig": {
         "access": "public"
     },
