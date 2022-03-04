@@ -964,7 +964,7 @@
     "@parcel/utils" "2.3.2"
     "nullthrows" "^1.1.1"
 
-"@parcel/runtime-react-refresh@2.3.2":
+"@parcel/runtime-react-refresh@^2.3.2", "@parcel/runtime-react-refresh@2.3.2":
   "integrity" "sha512-P+GRPO2XVDSBQ4HmRSj2xfbHSQvL9+ahTE/AB74IJExLTITv5l4SHAV3VsiKohuHYUAYHW3A/Oe7tEFCAb6Cug=="
   "resolved" "https://registry.npmjs.org/@parcel/runtime-react-refresh/-/runtime-react-refresh-2.3.2.tgz"
   "version" "2.3.2"
