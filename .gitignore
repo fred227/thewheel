@@ -2,4 +2,3 @@ node_modules
 dist
 .parcel-cache
 install_nvm.sh
-package-lock.json
