@@ -11,7 +11,7 @@ ReactDOM.render(
         <BrowserRouter>
         <Routes>
          <Route path="/*" element={<App/>}/>
-
+         <Route path="/manual" element={<Manual/>}/>
         </Routes>
         </BrowserRouter>
     </StrictMode>,

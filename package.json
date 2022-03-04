@@ -55,8 +55,7 @@
         "react-minimal-pie-chart": "^8.2.0",
         "react-router-dom": "^6.2.1",
         "yarn": "^1.22.17",
-        "shx": "^0.3.4",
-        "parcel": "^2.3.2"
+        "shx": "^0.3.4"
     },
     "devDependencies": {
         "@types/eslint": "^8.2.2",
