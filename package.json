@@ -35,6 +35,8 @@
         "heroku-postbuild": "parcel build src/index.html"
     },
     "dependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/runtime": "^7.17.2",
         "@emotion/react": "^11.0.0",
         "@emotion/styled": "^11.0.0",
         "@mui/icons-material": "^5.0.0",
