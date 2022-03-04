@@ -5,7 +5,7 @@
     "author": "flesage",
     "license": "Apache-2.0",
     "engines": {
-        "node": "16.14.0"
+        "node": "16.x"
         },
     "publishConfig": {
         "access": "public"
