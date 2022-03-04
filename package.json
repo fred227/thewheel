@@ -55,7 +55,8 @@
         "react-minimal-pie-chart": "^8.2.0",
         "react-router-dom": "^6.2.1",
         "yarn": "^1.22.17",
-        "shx": "^0.3.4"
+        "shx": "^0.3.4",
+        "parcel": "^2.3.2"
     },
     "devDependencies": {
         "@types/eslint": "^8.2.2",
@@ -71,7 +72,6 @@
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-react": "^7.28.0",
         "eslint-plugin-react-hooks": "^4.3.0",
-        "parcel": "^2.3.2",
         "prettier": "^2.5.1",
         "shx": "^0.3.4",
         "tslib": "^2.3.1",
