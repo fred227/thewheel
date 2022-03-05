@@ -153,7 +153,7 @@ export const WheelComponent: FC<MyLittleWheelComponentProps> = (props) => {
 
 
 
-    // Spin the wheel
+    // Spin the wheel with play()
     const SpinTheWheelClick = useCallback( () => {
 
         Promise.all([PDAProgram, PDAGAME]).then( async (values) => {
@@ -180,6 +180,7 @@ export const WheelComponent: FC<MyLittleWheelComponentProps> = (props) => {
     }, [PDAProgram, PDAGAME, publicKey]);
 
     return <div id="littlewheelbox">
+
     
         <div id="piechart">
             <PieChart data={datapiestate}/>
