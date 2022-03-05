@@ -56,7 +56,7 @@ export const Content: FC = () => {
 
         <article id="intro">
 
-            <h1>Please find technical documentation <a href="http://www.google.fr">HERE</a></h1>
+            <h1>Please find technical documentation <a href="https://dev.to/fred227/thewheel-a-first-experience-programming-on-solana-27h7">HERE</a></h1>
             <h1>Please find manual of TheWheel <Link to="/manual">HERE</Link></h1>
 
         </article>
