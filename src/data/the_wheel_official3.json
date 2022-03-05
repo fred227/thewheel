@@ -37,12 +37,12 @@
           "isSigner": true
         },
         {
-          "name": "gameaccount",
+          "name": "thewheelaccount",
           "isMut": true,
           "isSigner": false
         },
         {
-          "name": "thewheelaccount",
+          "name": "gameaccount",
           "isMut": true,
           "isSigner": false
         },

@@ -38,7 +38,7 @@ const program = new anchor.Program(idl, PUBLICKEY_PROGRAM,provider);
             console.log("thewheelBump=",value![1]!)
             console.log("publicKey=",publicKey?.toString())
       
-         const tx = await program!.rpc.initialize( new BN(254),{     
+         const tx = await program!.rpc.initialize( new BN(value![1]!),{     
             accounts: {
               creator: publicKey! ,
               thewheelaccount: value![0],

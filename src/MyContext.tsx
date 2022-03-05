@@ -11,9 +11,9 @@ import { exit } from 'process';
 export const MAX_SESSIONS = 9;
 export const MAX_WINNERS = 5;
 export const MIN_DEPOSIT = 10000000;
-export const LIMIT_TIME_FOR_DEPOSIT_INMS = 60*1000;//60*60*24*1000;
+export const LIMIT_TIME_FOR_DEPOSIT_INMS = 60*60*24*1000;
 
-export const PUBLICKEY_PROGRAM = new PublicKey("39D9W9evHuroXaBg7P48Z3ovJsyYvr4LUN7P8V9oGJ1Y");
+export const PUBLICKEY_PROGRAM = new PublicKey("dx1GAZkhNPZL9pe8ujizmykGqnAm9M7NJRMpSNej9pe");
 
 /* pub struct TheWheelAccount { // PDA = "thewheel"+id()
   pub is_initialized: u8,
@@ -81,9 +81,6 @@ export const MyContext: FC = ({ children }) => {
     const provider = new Provider( connection, AnchorWallet!, opts );
     const program = new Program(idl, PUBLICKEY_PROGRAM, provider);
 
-
-
-    
     const PDAProgram :  Promise<PublicKeyAndBuffer >=  useMemo( async () => {
       let [voteAccount, ] = await anchor.web3.PublicKey.findProgramAddress(
           [Buffer.from("thewheel"),PUBLICKEY_PROGRAM.toBuffer()],PUBLICKEY_PROGRAM );
