@@ -153,7 +153,7 @@ export const WheelComponent: FC<MyLittleWheelComponentProps> = (props) => {
 
 
 
-    // Spin the wheel with play()
+    // Spin the wheel with play()2
     const SpinTheWheelClick = useCallback( () => {
 
         Promise.all([PDAProgram, PDAGAME]).then( async (values) => {
