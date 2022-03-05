@@ -19,15 +19,14 @@ export const InitGameBlock: FC = () => {
   const { publicKey } = useWallet()
   const notify = useNotify();
 
-  const [launchingtime_insec, setlaunchingtime_insec] = useState(60*10);
+  const [launchingtime_insec, setlaunchingtime_insec] = useState(60*60*2);
   const [nbplayers, setnbplayers] = useState(3);
   const [ispending, setispending] = useState(false);
 
   const [issessionavailable,setissessionavailable] = useState(false);
 
   const launchingdate = [
-    { label: '10 minutes', value:60*10 },
-    { label: '1 hour', value:60*60 },
+    { label: '2 hours', value:60*60*2 },
     { label: '5 hours', value:60*60*5 },
     { label: '12 hours', value:60*60*12 },
     { label: '1 day', value:60*60*24 },
@@ -91,10 +90,7 @@ export const InitGameBlock: FC = () => {
           if ( values[1] == null){ console.log("initgame - gameaccount==null");return; }
           else {console.log("initgame - gameaccount==",values[1].toString());}
 
-        //  console.log("new Date().getTime() / 1000=",Math.trunc(new Date().getTime() / 1000));
           let launchingdate_rpc = (Math.trunc(new Date().getTime() / 1000)) + launchingtime_insec;
-/*           console.log("new anchor.BN(launchingdate_rpc)-Math.trunc(new Date().getTime() / 1000))=",
-          (new anchor.BN(launchingdate_rpc)-Math.trunc(new Date().getTime() / 1000))); */
           
           try{
             const tx = await program!.rpc.initgame(randomsession!, new anchor.BN(launchingdate_rpc), nbplayers,{    
@@ -129,7 +125,7 @@ export const InitGameBlock: FC = () => {
       <h1>Launching date in :</h1>
       <Autocomplete
           onChange={(event, value) => {if(value){setlaunchingtime_insec(value.value)}}}
-          defaultValue={  { label: '10 minutes', value:60*10 }}
+          defaultValue={  { label: '2 hours', value:60*60*2 }}
           disablePortal
           id="combo-box-demo2"
           options={launchingdate}
